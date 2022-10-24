@@ -44,7 +44,7 @@ const Navbar = () => {
         <li className="col-start-3 justify-self-end mr-2">
           {(accountId && sessionId && isAuthenticated)?
           <button ><img src={ genres.avater} alt={user} className="inline-block h-6 w-6 rounded-full dark:invert dark:filter mr-1"  /><Link to={`/profile/${accountId}`}>MyMovies</Link></button>:
-          <button onClick={fetchToken}><TbLogout className="inline mr-1"  />login</button>}
+          <button  onClick={fetchToken}><TbLogout className="inline mr-1"  />login</button>}
         </li>
         <li className="md:col-start-2 md:row-start-1 col-start-1 grid grid-cols-12 gap-0 pt-2 ">
           <BsSearch className="animate-slideleft mt-1 h-[1.4rem] w-5 col-span-1 "/>

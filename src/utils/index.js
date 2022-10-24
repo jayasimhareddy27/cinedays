@@ -12,7 +12,9 @@ export const fetchToken=async()=>{
         const token=data.request_token
         if(data.success){
             localStorage.setItem('request_token',token);
-            window.location.href=(`https://www.themoviedb.org/authenticate/${token}?redirect_to=${window.location.origin}/approved`);
+            window.open(`https://www.themoviedb.org/authenticate/${token}?redirect_to=${window.location.origin}/approved`, '_blank');
+
+            //window.location.href=(`https://www.themoviedb.org/authenticate/${token}?redirect_to=${window.location.origin}/approved`);
         }
         
     } catch (error) {
