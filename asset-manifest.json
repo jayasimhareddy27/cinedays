@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/cinedays/static/css/main.11484b1e.css",
-    "main.js": "/cinedays/static/js/main.23841508.js",
+    "main.js": "/cinedays/static/js/main.db42869b.js",
     "index.html": "/cinedays/index.html",
     "main.11484b1e.css.map": "/cinedays/static/css/main.11484b1e.css.map",
-    "main.23841508.js.map": "/cinedays/static/js/main.23841508.js.map"
+    "main.db42869b.js.map": "/cinedays/static/js/main.db42869b.js.map"
   },
   "entrypoints": [
     "static/css/main.11484b1e.css",
-    "static/js/main.23841508.js"
+    "static/js/main.db42869b.js"
   ]
 }
