@@ -32,11 +32,11 @@ const App=()=>{
                 </div>
                 <div className='bg-white dark:bg-black p-3 h-screen overflow-scroll pb-32'>
                     <Routes >
-                        <Route path='/cinedays'  exact element={<MovieList/>} ></Route>
-                        <Route path='/profile/:id' element={<Profile/>}></Route>
-                        <Route path='/Movie/:id' element={<Movieinformation/>}></Route>
-                        <Route path='Actor/:id' element={<Actors/>}></Route>
-                        <Route path='*' exact element={<Navigate replace  to="/cinedays" />} ></Route>
+                    <Route path='/'  exact element={<MovieList/>} ></Route>
+                        <Route path='/cinedays/profile/:id' element={<Profile/>}></Route>
+                        <Route path='/cinedays/Movie/:id' element={<Movieinformation/>}></Route>
+                        <Route path='/cinedays/Actor/:id' element={<Actors/>}></Route>
+                        <Route path='*' exact element={<Navigate replace  to="/" />} ></Route>
                     </Routes>
                 
                 </div>

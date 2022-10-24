@@ -9,7 +9,7 @@ const Movies = ({data,numberOfMovies}) => {
         {data?.results.map((details)=>{
           return(
             <div key={details.title}>
-              <Link to={`/movie/${details.id}`}><Movie details={details} /></Link>
+              <Link to={`/cinedays/movie/${details.id}`}><Movie details={details} /></Link>
             </div>
           )
         }).slice(1,numberOfMovies)}
