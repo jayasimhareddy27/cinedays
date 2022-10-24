@@ -1,7 +1,7 @@
 
 import { useEffect,useRef } from 'react';
 import { useDispatch } from 'react-redux';
-import { Route,Routes } from 'react-router-dom';
+import { Navigate, Route,Routes } from 'react-router-dom';
 import useAlan from "./Alan";
 
 import {close} from '../features/DrawerSlice';
@@ -32,11 +32,11 @@ const App=()=>{
                 </div>
                 <div className='bg-white dark:bg-black p-3 h-screen overflow-scroll pb-32'>
                     <Routes >
-                        <Route path='/approved' exact element={<MovieList/>} ></Route>
-                        <Route path='/' exact element={<MovieList/>} ></Route>
+                        <Route path='/'  exact element={<MovieList/>} ></Route>
                         <Route path='/profile/:id' element={<Profile/>}></Route>
                         <Route path='/Movie/:id' element={<Movieinformation/>}></Route>
                         <Route path='Actor/:id' element={<Actors/>}></Route>
+                        <Route path='*' exact element={<Navigate replace  to="/" />} ></Route>
                     </Routes>
                 
                 </div>
