@@ -34,7 +34,6 @@ const App=()=>{
                     <Routes >
                         <Route path='/approved' exact element={<MovieList/>} ></Route>
                         <Route path='/' exact element={<MovieList/>} ></Route>
-                        <Route path='https://jayasimhareddy27.github.io/' exact element={<MovieList/>} ></Route>
                         <Route path='/profile/:id' element={<Profile/>}></Route>
                         <Route path='/Movie/:id' element={<Movieinformation/>}></Route>
                         <Route path='Actor/:id' element={<Actors/>}></Route>
