@@ -35,7 +35,7 @@ const Sidebar = () => {
      <div className=''>
       <div className='grid grid-cols-12 m-2'>
         <div className='md:hidden col-span-1'><button className='' ><AiOutlineFullscreenExit  onClick={()=>dispatch(close()) }/></button></div>
-        <Link className='col-span-9 p-2' key={"image"}  to={'/'}><img alt='icon' src={Mode==='black'?redLogo:blueLogo} className={""}/>
+        <Link className='col-span-9 p-2' key={"image"}  to={'https://jayasimhareddy27.github.io/cinedays/'}><img alt='icon' src={Mode==='black'?redLogo:blueLogo} className={""}/>
         </Link>
       </div>
       <h3 className='px-2 text-slate-500'>Categories</h3>
