@@ -51,7 +51,7 @@ const Features=({data,setDrawer})=> {
             <div  className='grid grid-cols-3'>
               <button className='bg-transparent border-[1px] text-blue-500 border-blue-300 rounded-md p-2 shadow-xl inline-grid' onClick={AddToFavorite}> {!IsFavorited?'Favorite ❤️':'Unfavorite 🤍'}</button>
               <button className='bg-transparent border-[1px] text-blue-500 border-blue-300 rounded-md p-2 shadow-xl inline-grid' onClick={AddToWatchlist}> Watchlist {!IsWatchlisted?' +1':' --'}</button>
-              <Link to={'/'}><button className='bg-transparent border-[1px] text-blue-500 border-blue-300 rounded-md p-2 shadow-xl inline-grid' onClick={()=>{}}> Back{' ⬅️'}</button></Link>
+              <Link to={'cinedays'}><button className='bg-transparent border-[1px] text-blue-500 border-blue-300 rounded-md p-2 shadow-xl inline-grid' onClick={()=>{}}> Back{' ⬅️'}</button></Link>
             </div>
         </div>
     );

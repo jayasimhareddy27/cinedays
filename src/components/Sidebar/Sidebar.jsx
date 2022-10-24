@@ -46,10 +46,10 @@ const Sidebar = () => {
                 dispatch(close())
               }}>
                 <div className="col-start-1 md:col-end-3 col-end-2 py-1">
-                  <Link key={value} className='' to={'/'} > <img src={genreIcon[label.toLowerCase()]} alt={label} className={"dark:filter dark:invert "} /> </Link>
+                  <Link key={value} className='' to={'cinedays'} > <img src={genreIcon[label.toLowerCase()]} alt={label} className={"dark:filter dark:invert "} /> </Link>
                 </div> 
                 <div className="md:col-span-9 col-span-8 pl-3">
-                  <Link key={label} to={'/'}> {label} </Link>
+                  <Link key={label} to={'cinedays'}> {label} </Link>
                 </div> 
             </div>
           )})}
@@ -65,10 +65,10 @@ const Sidebar = () => {
               dispatch(close())
             }}>
               <div className="col-start-1 md:col-end-2 col-end-2 py-2">
-                <Link key={name} to={'/'}> <img src={genreIcon[name.toLowerCase()]} alt={name} className={"dark:filter dark:invert "} /> </Link>
+                <Link key={name} to={'cinedays'}> <img src={genreIcon[name.toLowerCase()]} alt={name} className={"dark:filter dark:invert "} /> </Link>
               </div> 
               <div className="md:col-span-10 col-span-9 pl-3">
-                <Link key={name+1} to={'/'}> {name} </Link>
+                <Link key={name+1} to={'cinedays'}> {name} </Link>
               </div>
             </div>
           )})}
