@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Banner=({Movie})=>{
     return(
         <>
-        <Link to={`/cinedays/movie/${Movie?.id}`}>
+        <Link to={`/movie/${Movie?.id}`}>
             
         <div className='relative animate-slowfade'>
             <div className=''>

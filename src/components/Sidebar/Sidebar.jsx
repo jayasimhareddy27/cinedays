@@ -35,7 +35,7 @@ const Sidebar = () => {
      <div className=''>
       <div className='grid grid-cols-12 m-2'>
         <div className='md:hidden col-span-1'><button className='' ><AiOutlineFullscreenExit  onClick={()=>dispatch(close()) }/></button></div>
-        <a className='col-span-9 p-2'  href='https://jayasimhareddy27.github.io/cinedays/'><img alt='icon' src={Mode==='black'?redLogo:blueLogo} className={""}/>
+        <a className='col-span-9 p-2'  href='/'><img alt='icon' src={Mode==='black'?redLogo:blueLogo} className={""}/>
         </a>
       </div>
       <h3 className='px-2 text-slate-500'>Categories</h3>
@@ -46,10 +46,10 @@ const Sidebar = () => {
                 dispatch(close())
               }}>
                 <div className="col-start-1 md:col-end-3 col-end-2 py-1">
-                  <Link key={value} className='' to={'cinedays'} > <img src={genreIcon[label.toLowerCase()]} alt={label} className={"dark:filter dark:invert "} /> </Link>
+                  <Link key={value} className='' to={'/'} > <img src={genreIcon[label.toLowerCase()]} alt={label} className={"dark:filter dark:invert "} /> </Link>
                 </div> 
                 <div className="md:col-span-9 col-span-8 pl-3">
-                  <Link key={label} to={'cinedays'}> {label} </Link>
+                  <Link key={label} to={'/'}> {label} </Link>
                 </div> 
             </div>
           )})}
@@ -65,10 +65,10 @@ const Sidebar = () => {
               dispatch(close())
             }}>
               <div className="col-start-1 md:col-end-2 col-end-2 py-2">
-                <Link key={name} to={'cinedays'}> <img src={genreIcon[name.toLowerCase()]} alt={name} className={"dark:filter dark:invert "} /> </Link>
+                <Link key={name} to={'/'}> <img src={genreIcon[name.toLowerCase()]} alt={name} className={"dark:filter dark:invert "} /> </Link>
               </div> 
               <div className="md:col-span-10 col-span-9 pl-3">
-                <Link key={name+1} to={'cinedays'}> {name} </Link>
+                <Link key={name+1} to={'/'}> {name} </Link>
               </div>
             </div>
           )})}

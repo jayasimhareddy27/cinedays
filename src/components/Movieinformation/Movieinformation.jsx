@@ -46,7 +46,7 @@ const Movieinformation = () => {
             <div  className='grid grid-flow-col place-items-center justify-evenly'>
               {data?.genres.map(( {id, name} ) =>{ return( 
                 <div key={name} className='inline-flex' onClick={()=>{dispatch(selectGenreorCategory(id)) }}>
-                      <Link key={name} to={'cinedays'} className="">  <img src={genreIcon[name.toLowerCase()]} alt={name} className={"dark:invert inline-flex h-6 w-6"} /> <p className='inline-flex'>{name}</p> </Link>  
+                      <Link key={name} to={'/'} className="">  <img src={genreIcon[name.toLowerCase()]} alt={name} className={"dark:invert inline-flex h-6 w-6"} /> <p className='inline-flex'>{name}</p> </Link>  
                   </div>
               )})}
             </div>
